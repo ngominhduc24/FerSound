@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: rgb(29, 27, 27);
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto Slab', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fersound-logo{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.fersound-logo img{
+  max-width: 200px;
+}
+.src {
+  margin: 12px 0px 20px;
+  flex: 1 1 0%;
+  border-top: 1px solid;
+  color: rgb(29, 27, 27);
+}
