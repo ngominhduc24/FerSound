@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import { Songs } from "../Context";
+import { Songs } from "./Context";
 
 export default function Playing() {
     const { song, handleSetSong } = useContext(Songs)

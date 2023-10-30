@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Songs } from '../Context'
+import { Songs } from './Context'
 
 export default function DetailSong() {
     const { song } = useContext(Songs)

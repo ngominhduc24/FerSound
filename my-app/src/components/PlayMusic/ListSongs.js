@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Songs } from "../Context";
+import { Songs } from "./Context";
 
 export default function ListSongs() {
     const { DataSongs, handleSetSong, song } = useContext(Songs);
