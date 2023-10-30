@@ -1,10 +1,11 @@
 import { Songs } from "./Context";
 import DataSongs from "../../data/songs.json";
 import { useState } from "react";
-import { Col, Row } from "react-bootstrap";
 import Playing from "./Playing";
 import DetailSong from "./DetailSong";
 import ListSongs from "./ListSongs";
+import "./css/PlayMusic.css";
+import Navbar from "./Navbar";
 
 export default function PlayMusic() {
     const [song, setSong] = useState(DataSongs[0])
@@ -17,7 +18,8 @@ export default function PlayMusic() {
             setSong(song)
     }
     return (
-        <Row>
+        <div className="App">
+            <Navbar />
             <Songs.Provider value={{ DataSongs, song, handleSetSong }}>
                 <div className="grid grid-cols-3 bg-slate-700 h-screen-navbar-player overflow-hidden">
                     <DetailSong />
@@ -25,6 +27,6 @@ export default function PlayMusic() {
                 </div>
                 <Playing />
             </Songs.Provider>
-        </Row>
+        </div>
     );
 }
