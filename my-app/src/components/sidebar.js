@@ -5,30 +5,33 @@ import { IoLibrary } from "react-icons/io5";
 
 
 export default function Sidebar() {
-    return (
-        <Row>
-            <Col md={2} style={{backgroundColor:'black',
-        color:'#b3b3b3',
-        display:'flex',
-        flexDirection:'column',
-        height:"100%",
-        width:"100%",
-        paddingBottom:"100%"}}>
-            <img
-            style={{
-              maxInlineSize: "80%",
-            }}
-            src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png"
-            alt=""
-          />
-          <br/><br/>    
-            <ul
+  return (
+    <Row>
+      <Col md={12} style={{
+        backgroundColor: 'black',
+        color: '#b3b3b3',
+        display: 'flex',
+        flexDirection: 'column',
+        height: "100%",
+        width: "100%",
+        paddingBottom: "100%"
+      }}>
+        <img
+          style={{
+            maxInlineSize: "90%",
+          }}
+          src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png"
+          alt=""
+        />
+        <br /><br />
+        <ul
           style={{
             listStyleType: "none",
             display: "flex",
             flexDirection: "column",
             gap: "1rem",
             padding: "1rem",
+            margin: 0,
           }}
         >
           <li>
@@ -37,13 +40,13 @@ export default function Sidebar() {
           </li>
           <li>
             <MdSearch />
-            <span> Search</span>
+            <span style={{fontWeight:'bold'}}> Search</span>
           </li>
           <li>
             <IoLibrary />
             <span> Your Library</span>
           </li>
-          <br/><br/>
+          <br /><br />
           <li>
             <span>RAP viet</span>
           </li>
@@ -51,9 +54,8 @@ export default function Sidebar() {
             <span>US-UK</span>
           </li>
         </ul>
+      </Col>
+    </Row>
 
-            </Col>
-        </Row>
-
-    )
+  )
 }

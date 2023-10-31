@@ -1,0 +1,159 @@
+.col-md-10{
+    background-color: #191414; /* Mã màu xanh ví dụ */
+}
+
+/* CSS cho thanh tìm kiếm */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 10px;
+    width: 50%;
+  }
+  
+  /* CSS cho ô nhập tìm kiếm */
+  .search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  /* CSS cho nút tìm kiếm */
+  .search-bar button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  /* CSS khi di chuột qua nút tìm kiếm */
+  .search-bar button:hover {
+    background-color: rgb(1, 81, 1);
+  }
+
+  /* CSS cho thanh tìm kiếm và tài khoản */
+.header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .search-bar {
+    float: left;
+    /* Các thuộc tính CSS khác cho thanh tìm kiếm */
+  }
+  
+  .account-info {
+    float: right;
+    /* Các thuộc tính CSS khác cho phần tài khoản */
+  }
+
+/* CSS cho phần tài khoản (hình tròn) */
+.account-info {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('https://yt3.googleusercontent.com/lRZ6IJmrnWpI4mvqmirmeKwqKmepeD7OZIk1C-csCF3fYRxkZXGFt7diVcKGXJPPBPTEH0vh=s900-c-k-c0x00ffffff-no-rj');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 50px; /* Đặt chiều rộng bằng với thanh tìm kiếm */
+    height: 50px; /* Đặt chiều cao bằng với thanh tìm kiếm */
+    margin-top: 10px;
+  }
+
+  /* CSS cho tùy chọn Đăng xuất và Tài khoản */
+  .account-options {
+    display: none; /* Ban đầu ẩn đi */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    right: 0; /* Hiển thị bên phải hình tròn */
+    top: 50px; /* Hiển thị bên dưới hình tròn */
+  }
+  
+  .account-info:hover .account-options {
+    display: block; /* Khi di chuột qua hình tròn, hiển thị tùy chọn */
+  }
+  
+  h3{
+    color: white;
+  }
+  /* CSS cho card nhỏ hơn */
+/* CSS cho khối chứa các card */
+.search-results {
+    display: flex; /* Sắp xếp các card hàng ngang */
+    flex-wrap: wrap; /* Để các card xuống dòng khi không đủ không gian */
+    justify-content: flex-start; /* Căn giữa các card */
+  }
+  
+  /* CSS cho card */
+  .song-card {
+    border: 1px solid #3b3737;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Điều chỉnh chiều rộng của card */
+    height: 250px; /* Điều chỉnh chiều cao của card */
+  }
+  
+  /* CSS cho hình ảnh bên trong card */
+  .song-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  /* CSS cho các văn bản trong card */
+  .song-card p {
+    margin: 10px;
+    color: white;
+  }
+
+  /* CSS cho tên bài hát in đậm */
+.song-card p.song-name {
+    font-weight: bold;
+  }
+  
+  .search-results-2 {
+    display: flex; /* Sắp xếp các card hàng ngang */
+    flex-wrap: wrap; /* Để các card xuống dòng khi không đủ không gian */
+    justify-content: flex-start; /* Căn giữa các card */
+  }
+  .song-card-2 {
+    border: 1px solid #3b3737;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Điều chỉnh chiều rộng của card */
+    height: 200px; /* Điều chỉnh chiều cao của card */
+  }
+
+  .song-card-2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  /* CSS cho các văn bản trong card */
+  .song-card-2 p {
+    margin: 10px;
+    color: white;
+  }
+
+  /* CSS cho tên bài hát in đậm */
+.song-card-2 p.song-name {
+    font-weight: bold;
+  }
