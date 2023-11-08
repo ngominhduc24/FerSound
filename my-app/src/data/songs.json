@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Believer",
+        "author": "Imagine Dragon",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/782130083555966986/Imagine_Dragons_-_Believer_LyricsMP3_160K.mp3",
+        "id": 1,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb920dc1f617550de8388f368e"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a"
+                }
+            ]
+        }
+    },
+    {
+        "name": "We don't talk anymore",
+        "author": "Charlie Puth",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/782129797403770900/Charlie_Puth_-_We_Don_t_Talk_Anymore_feat._SelenaMP3_128K.mp3",
+        "id": 2,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb894f1e165ee9c04daa82a5b6"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273633a2d775747bccfbcb17a45"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Despacito",
+        "author": "Justin Bieber & Luis foni ",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/782129852181381121/Justin_Bieber_Despacito_Lyrics_--_ft._Luis_FonMP3_128K.mp3",
+        "id": 3,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb8ae7f2aaa9817a704a87ea36"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273ef0d4234e1a645740f77d59c"
+                }
+            ]
+        }
+    }
+]
