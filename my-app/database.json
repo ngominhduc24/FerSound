@@ -23,7 +23,7 @@
       "role": 3
     },
     {
-      "id": 2,
+      "id": 3,
       "email": "abc@gmail.com",
       "password": "123456",
       "name": "John",
@@ -34,7 +34,7 @@
       "role": 1
     },
     {
-      "id": 2,
+      "id": 4,
       "email": "0987654321",
       "password": "123456",
       "name": "Long",
@@ -51,7 +51,7 @@
       "username": "asd",
       "password": "123",
       "checked": false,
-      "id": 3
+      "id": 5
     },
     {
       "fullname": "asd",
@@ -60,31 +60,13 @@
       "username": "a",
       "password": "a",
       "checked": false,
-      "id": 4
-    },
-    {
-      "fullname": "",
-      "gender": "",
-      "dob": "",
-      "username": "+84582079987",
-      "password": "1",
-      "checked": false,
-      "id": 5
-    },
-    {
-      "fullname": "",
-      "gender": "",
-      "dob": "",
-      "username": "+84582079987",
-      "password": "1",
-      "checked": false,
       "id": 6
     },
     {
-      "fullname": "long",
-      "gender": "male",
-      "dob": "1111-11-11",
-      "username": "+84368353613",
+      "fullname": "",
+      "gender": "",
+      "dob": "",
+      "username": "+84582079987",
       "password": "1",
       "checked": false,
       "id": 7
@@ -93,10 +75,28 @@
       "fullname": "",
       "gender": "",
       "dob": "",
+      "username": "+84582079987",
+      "password": "1",
+      "checked": false,
+      "id": 8
+    },
+    {
+      "fullname": "long",
+      "gender": "male",
+      "dob": "1111-11-11",
+      "username": "+84368353613",
+      "password": "1",
+      "checked": false,
+      "id": 9
+    },
+    {
+      "fullname": "",
+      "gender": "",
+      "dob": "",
       "username": "ngominhduc100@gmail.com",
       "password": "123",
       "checked": false,
-      "id": 8
+      "id": 10
     }
   ],
   "song": [
