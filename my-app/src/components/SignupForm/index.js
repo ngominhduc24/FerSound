@@ -20,6 +20,7 @@ export default function SignupForm() {
     useEffect(() => {
         if (step === -1) {
             // Perform signup logic
+            setGender(gender == 'male' ? '1' : '0')
             const signupData = {
                 fullname,
                 gender,
