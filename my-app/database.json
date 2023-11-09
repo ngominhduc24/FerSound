@@ -88,6 +88,15 @@
       "password": "1",
       "checked": false,
       "id": 7
+    },
+    {
+      "fullname": "",
+      "gender": "",
+      "dob": "",
+      "username": "ngominhduc100@gmail.com",
+      "password": "123",
+      "checked": false,
+      "id": 8
     }
   ],
   "song": [

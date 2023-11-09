@@ -20,11 +20,19 @@ export default function Profile({ step, setFullname, setGender, setDob, fullname
         if (isPhoneNumber(username)) {
             step(3);
         }
+        else if (isEmail(username)) {
+            step(4);
+        }
     };
 
     const isPhoneNumber = (input) => {
         const phoneNumberRegex = /^\+?\d+$/;
         return phoneNumberRegex.test(input);
+    };
+
+    const isEmail = (input) => {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(input);
     };
 
     return (

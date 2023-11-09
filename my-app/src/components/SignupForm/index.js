@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import Authen from './authen';
 import Profile from './profile';
 import VerifyPhoneComponent from './verifyPhone';
+import VerifyMailComponent from './verifyMailComponent';
 
 export default function SignupForm() {
     const [step, setStep] = useState(1);
@@ -80,8 +81,8 @@ export default function SignupForm() {
                             {step === 3 && (
                                 <VerifyPhoneComponent step={setStep} phoneNumber={username} />
                             )}
-                            {step === 0 && (
-                                <VerifyPhoneComponent />
+                            {step === 4 && (
+                                <VerifyMailComponent step={setStep} userEmail={username} />
                             )}
                         </MDBCardBody>
                     </MDBCard>

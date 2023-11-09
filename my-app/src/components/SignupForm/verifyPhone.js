@@ -65,18 +65,18 @@ const VerifyPhoneComponent = ({ phoneNumber, step }) => {
                     <div id="recaptcha-container"></div>
                 </div>
             )}
-            {/* {!isCaptchaVisible && ( */}
+            {!isCaptchaVisible && (
 
-            <div className="d-flex flex-column ">
-                <p className="text-white mb-3">Enter Verification Code: </p>
-                <MDBInput wrapperClass='mb-4 w-100' type='text' size="lg" placeholder='OTP...' style={{ color: 'white' }} value={otp} onChange={(e) => setOtp(e.target.value)} />
+                <div className="d-flex flex-column ">
+                    <p className="text-white mb-3">Enter Verification Code: </p>
+                    <MDBInput wrapperClass='mb-4 w-100' type='text' size="lg" placeholder='OTP...' style={{ color: 'white' }} value={otp} onChange={(e) => setOtp(e.target.value)} />
 
-                <MDBBtn size='lg' className="mx-auto" style={{ backgroundColor: "#1FDF64" }} onClick={handleVerifyOtp} >
-                    Verify OTP
-                </MDBBtn>
-            </div>
+                    <MDBBtn size='lg' className="mx-auto" style={{ backgroundColor: "#1FDF64" }} onClick={handleVerifyOtp} >
+                        Verify OTP
+                    </MDBBtn>
+                </div>
 
-            {/* )} */}
+            )}
         </div>
     );
 };
