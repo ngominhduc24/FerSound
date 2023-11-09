@@ -35,7 +35,7 @@ export default function Login() {
         await fetch(`http://localhost:9999/users?email=${username}&password=${password}`).then((response) => response.json())
             .then(response => {
                 if (response.length == 1) {
-                    window.location.href = '/play';
+                    window.location.href = '/home';
                 } else {
                     setMessage(response.message)
                 }
