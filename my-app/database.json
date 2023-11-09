@@ -13,8 +13,8 @@
         },
         {
             "id": 2,
-            "email": "admin@gmail.com",
-            "password": "123456",
+            "email": "admin",
+            "password": "1",
             "name": "Han",
             "gender": "21",
             "birthday": "2000-12-10",
