@@ -14,9 +14,20 @@ export default function Authen({ step, setUsername, setPassword, username, passw
 
     const handleNextClick = () => {
         if (username && password) {
-            setUsername(username);
-            setPassword(password);
-            step(2);
+            fetch(`http://localhost:9999/users?email=${username}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        setUsermsg('Email already exists');
+                    } else {
+                        setUsername(username);
+                        setPassword(password);
+                        step(2);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error checking email or phone:', error);
+                });
         } else {
             setUsermsg(username ? '' : 'Username is required');
             setPassmsg(password ? '' : 'Password is required');
@@ -35,7 +46,7 @@ export default function Authen({ step, setUsername, setPassword, username, passw
             <p style={{ marginTop: "10px", fontStyle: "italic" }} >Step 1/3</p>
             <p className="text-white " style={{ marginTop: "-20px", fontStyle: "italic" }}>Create user name & password</p>
 
-            <p className="text-white mb-3">Email or username</p>
+            <p className="text-white mb-3">Email or phoneNumber</p>
             <MDBInput wrapperClass='mb-4 w-100' id='username' type='email' size="lg" placeholder='Email or username' style={{ color: 'white' }} value={username} onChange={e => setUsername(e.target.value)} />
             <p style={{ display: usermsg === '' ? 'none' : 'block', color: 'red', margin: '-15px 0px 5px 0px', fontSize: '15px' }}>{usermsg}</p>
 
