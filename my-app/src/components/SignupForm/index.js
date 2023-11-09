@@ -21,13 +21,18 @@ export default function SignupForm() {
         if (step === -1) {
             // Perform signup logic
             setGender(gender == 'male' ? '1' : '0')
+            const avatar = ''
+            const premium = 0
+            const role = 1
             const signupData = {
                 fullname,
                 gender,
                 dob,
                 username,
                 password,
-                checked,
+                avatar,
+                premium,
+                role,
             };
 
             fetch('http://localhost:9999/users', {
