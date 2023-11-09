@@ -1,46 +1,61 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import * as Yup from 'yup';
+import './login.css'
+import {
+  MDBBtn,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBCard,
+  MDBCardBody,
+  MDBInput,
+  MDBIcon,
+  MDBCheckbox
+}
+  from 'mdb-react-ui-kit';
 
-const LoginSchema = Yup.object().shape({
-  email: Yup.string().email('Invalid email').required('Required'),
-  password: Yup.string().required('Required'),
-});
-
-const LoginForm = () => {
+function LoginForm() {
   return (
-    <div className='login__form'>
-      <Formik
-        initialValues={{ email: '', password: '' }}
-        validationSchema={LoginSchema}
-        onSubmit={(values) => {
-          console.log(values);
-        }}
-      >
-        {({ errors, touched }) => (
-          <Form>
-            <div className='input__field'>
-              <label htmlFor="email">Email</label>
-              <input type="email" name="email" id="email" />
-              <ErrorMessage name="email" component="div" />
-            </div>
+    <MDBContainer fluid>
 
-            <div className='input__field'>
-              <label htmlFor="password">Password</label>
-              <input type="password" name="password" id="password" />
-              <ErrorMessage name="password" component="div" />
-            </div>
-            <div>
-              <input type="checkbox" /><label htmlFor="save">Remember me</label>
-            </div>
-           
-            <button className='login__btn' type="submit">Login</button>
-          </Form>
-        )}
-      </Formik>
-    </div>
+      <MDBRow className='d-flex justify-content-center align-items-center h-100'>
+        <MDBCol col='12'>
+
+          <MDBCard className='bg-white my-5 mx-auto' style={{ borderRadius: '1rem', maxWidth: '500px' }}>
+            <MDBCardBody className='p-5 w-100 d-flex flex-column'>
+
+              <h1 className="fw-bold mb-2 text-center">Sign in</h1>
+
+              <p className="text-white mb-3">Please enter your login and password!</p>
+              <MDBInput wrapperClass='mb-4 w-100' label='Email address' id='formControlLg' type='email' size="lg" />
+              <p className="text-white mb-3">Please enter your login and password!</p>
+              <MDBInput wrapperClass='mb-4 w-100' label='Password' id='formControlLg' type='password' size="lg" />
+
+              <MDBCheckbox name='flexCheck' id='flexCheckDefault' className='mb-4' label='Remember password' />
+
+              <MDBBtn size='lg'>
+                Login
+              </MDBBtn>
+
+              <hr className="my-4" />
+
+              <MDBBtn className="mb-2 w-100" size="lg" style={{ backgroundColor: '#dd4b39' }}>
+                <MDBIcon fab icon="google" className="mx-2" />
+                Sign in with google
+              </MDBBtn>
+
+              <MDBBtn className="mb-4 w-100" size="lg" style={{ backgroundColor: '#3b5998' }}>
+                <MDBIcon fab icon="facebook-f" className="mx-2" />
+                Sign in with facebook
+              </MDBBtn>
+
+            </MDBCardBody>
+          </MDBCard>
+
+        </MDBCol>
+      </MDBRow>
+
+    </MDBContainer>
   );
-};
+}
 
 export default LoginForm;
-
