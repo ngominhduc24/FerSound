@@ -1,48 +1,416 @@
 [
     {
-        "name": "Believer",
-        "author": "Imagine Dragon",
-        "url": "https://cdn.discordapp.com/attachments/775740994595323954/782130083555966986/Imagine_Dragons_-_Believer_LyricsMP3_160K.mp3",
+        "name": "Sing me to sleep",
+        "author": "Alan Walker",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741533789224960/Alan_Walker_-_Sing_Me_To_SleepMP3_160K.mp3",
+        "id": 0,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebc02d416c309a68b04dc94576"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273a108e07c661f9fc54de9c43a"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Fade-NCS Release",
+        "author": "Alan Walker",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741536591806484/Alan_Walker_-_Fade_NCS_ReleaseMP3_160K.mp3",
         "id": 1,
         "links": {
             "images": [
                 {
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb920dc1f617550de8388f368e"
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebc02d416c309a68b04dc94576"
                 },
                 {
-                    "url": "https://i.scdn.co/image/ab67616d0000b2735675e83f707f1d7271e5cf8a"
+                    "url": "https://i.scdn.co/image/ab67616d0000b273a108e07c661f9fc54de9c43a"
                 }
             ]
         }
     },
     {
-        "name": "We don't talk anymore",
-        "author": "Charlie Puth",
-        "url": "https://cdn.discordapp.com/attachments/775740994595323954/782129797403770900/Charlie_Puth_-_We_Don_t_Talk_Anymore_feat._SelenaMP3_128K.mp3",
+        "name": "She-NCS Release",
+        "author": "Andromedik",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741544149549096/Andromedik_-_SHE_NCS_ReleaseMP3_160K.mp3",
         "id": 2,
         "links": {
             "images": [
                 {
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb894f1e165ee9c04daa82a5b6"
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb37db62ee361f796bef5b49a6"
                 },
                 {
-                    "url": "https://i.scdn.co/image/ab67616d0000b273633a2d775747bccfbcb17a45"
+                    "url": "https://i.scdn.co/image/ab67616d0000b2737b8d8ca1a8e14506c8f35233"
                 }
             ]
         }
     },
     {
-        "name": "Despacito",
-        "author": "Justin Bieber & Luis foni ",
-        "url": "https://cdn.discordapp.com/attachments/775740994595323954/782129852181381121/Justin_Bieber_Despacito_Lyrics_--_ft._Luis_FonMP3_128K.mp3",
+        "name": "About you-NCS Release",
+        "author": "Ascence",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741547203002389/Ascence_-_About_You_NCS_ReleaseMP3_160K.mp3",
         "id": 3,
         "links": {
             "images": [
                 {
-                    "url": "https://i.scdn.co/image/ab6761610000e5eb8ae7f2aaa9817a704a87ea36"
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb6e50f29c671af8aff68b321d"
                 },
                 {
-                    "url": "https://i.scdn.co/image/ab67616d0000b273ef0d4234e1a645740f77d59c"
+                    "url": "https://i.scdn.co/image/ab67616d0000b27335ca35166aba974dd2dd29a2"
+                }
+            ]
+        }
+    },
+    {
+        "name": "On & On (feat. Daniel Levi) [NCS Release]",
+        "author": "Cartoon",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741549177995264/Cartoon_-_On___On_feat._Daniel_Levi_NCS_ReleaseMP3_160K.mp3",
+        "id": 4,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb65d82d90b55b4dd3cbb2efd2"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273d2aaf635815c265aa1ecdecc"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Castle [NCS Release]",
+        "author": "Clarx & Harddope",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741580619284540/Clarx___Harddope_-_Castle_NCS_ReleaseMP3_160K.mp3",
+        "id": 5,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb015af0621865cd5cd5046c2c"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Invincible [NCS Release]",
+        "author": "DEAF KEV ",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741667210035220/DEAF_KEV_-_Invincible_NCS_ReleaseMP3_160K.mp3",
+        "id": 6,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb33b1cf2b7b544840b727865b"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b27362a57823eced1cb4fd93b2c1"
+                }
+            ]
+        }
+    },
+    {
+        "name": " Blank [NCS Release]",
+        "author": "Disfigure",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741669588205598/Disfigure_-_Blank_NCS_ReleaseMP3_160K.mp3",
+        "id": 7,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb2aa26cfdf3b785f171a4795c"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b27352b2a3824413eefe9e33817a"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Nekozilla [NCS Release]",
+        "author": "Different Heaven",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741669626085426/Different_Heaven_-_Nekozilla_NCS_ReleaseMP3_160K.mp3",
+        "id": 8,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb2af8bbb74cb106ac91d31c9a"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b27309065005b0fbfc4b320d05de"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Savannah (feat. Philly K) [NCS Release]",
+        "author": "Diviners",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741669626085426/Different_Heaven_-_Nekozilla_NCS_ReleaseMP3_160K.mp3",
+        "id": 9,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb2d530c07b6c9f629e3327175"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273b536cfb98c74558db48f8a46"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Cloud 9 [NCS Release]",
+        "author": "Itro & Tobu",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741836018974740/Itro___Tobu_-_Cloud_9_NCS_ReleaseMP3_160K.mp3",
+        "id": 10,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb90533dd45388e25202c8de48"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273d6fd719531afda5f9cc0e248"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Sky High [NCS Release]",
+        "author": "Elektronomia",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741836152668201/Elektronomia_-_Sky_High_NCS_ReleaseMP3_160K.mp3",
+        "id": 11,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebbd83cf91e7780f4b0a4f0687"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b27394ae8395433c0c7521ac25ba"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Where'd You Go (feat. Luna Lark) [NCS Release]",
+        "author": "Julius Dreisig",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741837642170382/Julius_Dreisig_-_Where_d_You_Go_feat._Luna_LarkMP3_160K.mp3",
+        "id": 12,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb942bc92abc325c9352527759"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273100fb4649eae80922bf1acbf"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Island [NCS BEST OF]",
+        "author": "Jarico",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741836840665158/Jarico_-_Island_NCS_BEST_OFMP3_160K.mp3",
+        "id": 13,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b27371c82efdc4e41e6d3d4a3544"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273058c78826c35cbc3d03516c1"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Heroes Tonight (feat. Johnning) [NCS BEST OF]",
+        "author": "Janji",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741837385793556/Janji_-_Heroes_Tonight_feat._Johnning_NCS_ReleaMP3_160K.mp3",
+        "id": 14,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eba91f4bf05646262baed9ca2d"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b2739b07b787123fe99fffc9c789"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Landscape (Vlog No Copyright Music)",
+        "author": "Janji",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741839517024256/Jarico_-_Landscape_NCS_BEST_OFMP3_160K.mp3",
+        "id": 15,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eba91f4bf05646262baed9ca2d"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b27328007758bd0a5ffb1a07abeb"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Chasing Dreams [NCS Release]",
+        "author": "Jim Yosef & Valentina Franco",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741840136994846/Jim_Yosef___Valentina_Franco_-_Chasing_Dreams_NCSMP3_160K.mp3",
+        "id": 16,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebb1887e30b47ba6cb5e339c0e"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273c14d955611b72addabd9163c"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Link [NCS Release]",
+        "author": "Jim Yosef",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741840224813096/Jim_Yosef_-_Link_NCS_ReleaseMP3_160K.mp3",
+        "id": 17,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebb1887e30b47ba6cb5e339c0e"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b2734f1608584777e92bddd5c904"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Symbolism [NCS Release]",
+        "author": "Electro-Light",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741841010065418/Electro-Light_-_Symbolism_NCS_ReleaseMP3_160K.mp3",
+        "id": 18,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebadb48ec72861292e4fe833f1"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273b44de5b9f5eba409dfa753e6"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Invisible [NCS Release]",
+        "author": "Julius Dreisig & Zeus X Crona",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741873582899230/Julius_Dreisig___Zeus_X_Crona_-_Invisible_NCS_RelMP3_160K.mp3",
+        "id": 19,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb942bc92abc325c9352527759"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b27391b709ced968e29e8f00dfe3"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Earth [NCS Release]",
+        "author": "K-391",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741894939901992/K-391_-_Earth_NCS_ReleaseMP3_160K.mp3",
+        "id": 20,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebdf3029ee98c5f4fcc0a4c203"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b2732ea7097370b211b8213cdb5a"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Harpuia [NCS Release]",
+        "author": "Kadenza ",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741906344869928/Kadenza_-_Harpuia_NCS_ReleaseMP3_160K.mp3",
+        "id": 21,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5ebaad54b2cf9044587eac7acdf"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273cac40eaa1c17e52e45a8098f"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Dreams [NCS Release]",
+        "author": "Lost Sky",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741919178653716/Lost_Sky_-_Dreams_NCS_ReleaseMP3_160K.mp3",
+        "id": 22,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb2867e7ca4fcd254cfbbb8940"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273eb4d7af8109e201a4d438e02"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Fearless pt.II (feat. Chris Linton) [NCS Release]",
+        "author": "Lost Sky",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741949998399572/Lost_Sky_-_Fearless_pt.II_feat._Chris_Linton_NCMP3_160K.mp3",
+        "id": 23,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb2867e7ca4fcd254cfbbb8940"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b2733be40769b1c2361cea9f0843"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Ark [NCS Release]",
+        "author": "Ship Wrek & Zookeepers",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741988191338526/Ship_Wrek___Zookeepers_-_Ark_NCS_ReleaseMP3_160K.mp3",
+        "id": 24,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb98170a22353d3b9987d26031"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b27303c03da08efb9051d8fae5d5"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Where We Started (feat. Jex) [NCS Release]",
+        "author": "Lost Sky",
+        "url": "https://cdn.discordapp.com/attachments/775740994595323954/775741989177524264/Lost_Sky_-_Where_We_Started_feat._Jex_NCS_ReleaMP3_160K.mp3",
+        "id": 25,
+        "links": {
+            "images": [
+                {
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb2867e7ca4fcd254cfbbb8940"
+                },
+                {
+                    "url": "https://i.scdn.co/image/ab67616d0000b273a61f22690660bd5264495524"
                 }
             ]
         }
