@@ -14,6 +14,14 @@ export default function UserManager() {
 
 
     useEffect(() => {
+        const storedData = localStorage.getItem('user');
+
+        if (storedData) {
+            const decodedData = JSON.parse(atob(storedData));
+            if (decodedData.role !== 3) {
+                window.location.href = '/login';
+            }
+        }
         fetch(`http://localhost:9999/users`)
             .then(res => res.json())
             .then(res => {
