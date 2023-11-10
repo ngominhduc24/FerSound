@@ -13,7 +13,12 @@ export default function Authen({ step, setUsername, setPassword, username, passw
     const [passmsg, setPassmsg] = useState('');
 
     const handleNextClick = () => {
+
         if (username && password) {
+            if (validatePassword(password) === false) {
+                setPassmsg('Password must be at least 6 characters long and contain at least one lowercase letter and one uppercase letter');
+                return;
+            }
             fetch(`http://localhost:9999/users?email=${username}`)
                 .then(response => response.json())
                 .then(data => {
@@ -34,6 +39,25 @@ export default function Authen({ step, setUsername, setPassword, username, passw
         }
     };
 
+    function validatePassword(password) {
+        // Check if the password is at least 6 characters long
+        if (password.length < 6) {
+            return false;
+        }
+
+        // Check if the password contains at least one lowercase letter
+        if (!/[a-z]/.test(password)) {
+            return false;
+        }
+
+        // Check if the password contains at least one uppercase letter
+        if (!/[A-Z]/.test(password)) {
+            return false;
+        }
+
+        // If all conditions are met, the password is valid
+        return true;
+    }
 
     return (
         <div >
