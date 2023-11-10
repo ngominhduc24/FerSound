@@ -1,49 +1,76 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Row, Col } from 'react-bootstrap';
+import logoImage from '../../Assets/logofersound.png';
 import {
     MDBBtn, MDBInput
 }
     from 'mdb-react-ui-kit';
 import './signup.css';
 
-export default function Authen({ step }) {
-    const [fullname, setFullname] = useState('');
-    const [gender, setGender] = useState('');
-    const [dob, setDob] = useState('');
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
-    const [message, setMessage] = useState('');
+export default function Authen({ step, setUsername, setPassword, username, password }) {
     const [usermsg, setUsermsg] = useState('');
     const [passmsg, setPassmsg] = useState('');
-    const [checked, setChecked] = useState(false);
 
     const handleNextClick = () => {
+
         if (username && password) {
-            step(2);
+            if (validatePassword(password) === false) {
+                setPassmsg('Password must be at least 6 characters long and contain at least one lowercase letter and one uppercase letter');
+                return;
+            }
+            fetch(`http://localhost:9999/users?email=${username}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        setUsermsg('Email already exists');
+                    } else {
+                        setUsername(username);
+                        setPassword(password);
+                        step(2);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error checking email or phone:', error);
+                });
         } else {
             setUsermsg(username ? '' : 'Username is required');
             setPassmsg(password ? '' : 'Password is required');
         }
     };
 
+    function validatePassword(password) {
+        // Check if the password is at least 6 characters long
+        if (password.length < 6) {
+            return false;
+        }
+
+        // Check if the password contains at least one lowercase letter
+        if (!/[a-z]/.test(password)) {
+            return false;
+        }
+
+        // Check if the password contains at least one uppercase letter
+        if (!/[A-Z]/.test(password)) {
+            return false;
+        }
+
+        // If all conditions are met, the password is valid
+        return true;
+    }
+
     return (
         <div >
             <Row style={{ marginTop: "-20px" }}>
                 <Col md={{ span: 4, offset: 4 }} style={{ display: "flex" }}>
-                    <svg width="30px" height="30x" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#1ED760" fill-rule="evenodd" d="M19.0983701,10.6382791 C15.230178,8.34118115 8.85003755,8.12986439 5.15729493,9.25058527 C4.56433588,9.43062856 3.93727638,9.09580812 3.75758647,8.50284907 C3.57789655,7.90953664 3.91236362,7.28283051 4.50585273,7.10261054 C8.74455585,5.81598127 15.7909802,6.06440214 20.2440037,8.70780512 C20.7774195,9.02442687 20.9525156,9.71332656 20.6362472,10.2456822 C20.3198021,10.779098 19.6305491,10.9549008 19.0983701,10.6382791 M18.971686,14.0407262 C18.7004726,14.4810283 18.1246521,14.6190203 17.6848801,14.3486903 C14.4600027,12.3664473 9.54264764,11.792217 5.72728477,12.9503953 C5.23256328,13.0998719 4.70992535,12.8208843 4.55974204,12.3270462 C4.41061884,11.8323247 4.68978312,11.3107469 5.18362118,11.1602103 C9.5419409,9.83771368 14.9600247,10.4782013 18.6638986,12.7544503 C19.1036707,13.0253103 19.242016,13.6013075 18.971686,14.0407262 M17.5034233,17.308185 C17.2876894,17.6617342 16.827245,17.7725165 16.4749326,17.5571359 C13.6571403,15.8347984 10.1101639,15.4459119 5.93312425,16.4000177 C5.53063298,16.4922479 5.12937851,16.2399399 5.03767834,15.8376253 C4.94544812,15.4351341 5.19669597,15.0338796 5.60024736,14.9420027 C10.1712973,13.8970803 14.0923186,14.3467468 17.2551791,16.2796943 C17.6078449,16.4948982 17.7189805,16.9556959 17.5034233,17.308185 M12,0 C5.37267547,0 0,5.37249879 0,11.9998233 C0,18.6278546 5.37267547,24 12,24 C18.6275012,24 24,18.6278546 24,11.9998233 C24,5.37249879 18.6275012,0 12,0" />
-                    </svg>
-                    <p style={{ marginLeft: "5px", fontFamily: "fantasy", fontSize: "26px", marginTop: "15px" }}>Spotify</p>
+                    <img src={logoImage} alt="logo" style={{ marginTop: "15px" }} />
                 </Col>
             </Row>
 
-            {/* <h2 className="fw-bold mb-2 text-center text-white">Sign up to FerSound</h2> */}
             <p style={{ marginTop: "10px", fontStyle: "italic" }} >Step 1/3</p>
             <p className="text-white " style={{ marginTop: "-20px", fontStyle: "italic" }}>Create user name & password</p>
-            <p style={{ display: message === '' ? 'none' : 'block', color: 'red', margin: '-15px 0px 5px 0px', fontSize: '17px' }}>{message}</p>
 
-            <p className="text-white mb-3">Email or username</p>
+            <p className="text-white mb-3">Email or phoneNumber</p>
             <MDBInput wrapperClass='mb-4 w-100' id='username' type='email' size="lg" placeholder='Email or username' style={{ color: 'white' }} value={username} onChange={e => setUsername(e.target.value)} />
             <p style={{ display: usermsg === '' ? 'none' : 'block', color: 'red', margin: '-15px 0px 5px 0px', fontSize: '15px' }}>{usermsg}</p>
 

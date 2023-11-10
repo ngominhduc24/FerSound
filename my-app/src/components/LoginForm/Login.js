@@ -34,11 +34,26 @@ export default function Login() {
 
         await fetch(`http://localhost:9999/users?email=${username}&password=${password}`).then((response) => response.json())
             .then(response => {
-                if (response.length == 1) {
-                    window.location.href = '/home';
+                if (response.length === 1) {
+                    console.log(response);
+                    if (response[0].role === 1 || response[0].role === 2) {
+                        window.location.href = '/home';
+                    } else if (response[0].role === 3) {
+                        window.location.href = '/admin/users';
+                    }
+                    // Encoding
+                    const userData = {
+                        role: response[0].role,
+                        id: response[0].id
+                    };
+
+                    const encodedData = btoa(JSON.stringify(userData));
+
+                    localStorage.setItem('user', encodedData);
                 } else {
-                    setMessage(response.message)
+                    setMessage(response.message);
                 }
+
             })
     }
 

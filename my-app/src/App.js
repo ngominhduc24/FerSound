@@ -3,6 +3,7 @@ import PlayMusic from './components/PlayMusic/PlayMusic';
 import Header from './components/HeaderForm/Header';
 import Login from "./components/LoginForm/Login";
 import SignupForm from "./components/SignupForm/index";
+import UserManager from "./components/AccountForm/managerAccount";
 import "./App.css";
 import Search from './components/Homepage/Search';
 import Homepage from './components/Homepage/Homepage';
@@ -19,6 +20,7 @@ function App() {
           <Route path='/signup' element={<SignupForm />}></Route>
           <Route path='/home' element={<Homepage />}></Route>
           <Route path='/search' element={<Search />}></Route>
+          <Route path='/admin/users' element={<UserManager />}></Route>
         </Routes>
       </BrowserRouter>
     </div >
