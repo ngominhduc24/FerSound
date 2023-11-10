@@ -12,6 +12,7 @@ export default function Homepage() {
                 <div className='color'></div>
                 <div className='color'></div>
                 <div className='home-body flex'>
+                    <h1>hello</h1>
                 </div>
             </div>
         </>
