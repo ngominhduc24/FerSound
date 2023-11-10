@@ -1,0 +1,16 @@
+.container-fluid {
+    height: 1000;
+    background-color: #181818;
+    margin-top: -100px;
+}
+
+.card-body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.ripple {
+    border-radius: 60px;
+}
+
+.ripple {}

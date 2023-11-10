@@ -1,0 +1,28 @@
+nav ul {
+    width: 484px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    /* Đặt khoảng cách giữa các liên kết */
+}
+
+li {
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1db954;
+}

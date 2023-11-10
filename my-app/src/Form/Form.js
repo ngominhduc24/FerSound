@@ -1,14 +1,15 @@
-import logo from "../../assets/spotify.png";
-import { NavLink, Outlet } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import logo from "../../Assets/logofersound.png";
+import { Link, NavLink, Outlet, useParams } from "react-router-dom";
 
 const Form = () => {
   const benefits = [
     "Shuffle play",
-    "Add free",
+    "Ad-free",
     "Unlimited Skip",
     "Listen offline",
     "Play any track",
-    "Hight quality audio",
+    "High-quality audio",
   ];
 
   return (

@@ -1,6 +1,6 @@
 import { Songs } from "./Context";
 import DataSongs from "../../data/songs.json";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Playing from "./Playing";
 import DetailSong from "./DetailSong";
 import ListSongs from "./ListSongs";
@@ -9,6 +9,20 @@ import Navbar from "./Navbar";
 
 export default function PlayMusic() {
     const [song, setSong] = useState(DataSongs[0])
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch("http://localhost:9999/song");
+                const data = await response.json();
+                console.log('>> ' + song);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
 
     const handleSetSong = (idSong) => {
         const song = DataSongs.find(song => song.id === idSong)
